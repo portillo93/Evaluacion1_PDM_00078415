@@ -5,41 +5,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".NewActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Usuario:"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contador de productos"
-        android:layout_gravity="center"
-        android:textSize="20dp"
-        />
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Correo Electrónico:"/>
+
+    </LinearLayout>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal">
         <Button
-            android:id="@+id/btn_p1"
+            android:id="@+id/btn_pr1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Producto 1 #"
             android:background="#FF0000"/>
         <Button
-            android:id="@+id/btn_p2"
+            android:id="@+id/btn_pr2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Producto 2 #"
             android:background="#800000"/>
         <Button
-            android:id="@+id/btn_p3"
+            android:id="@+id/btn_pr3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Producto 3 #"
-        android:background="#800080"/>
+            android:background="#800080"/>
 
     </LinearLayout>
     <LinearLayout
@@ -48,21 +62,21 @@
         android:layout_weight="1"
         android:orientation="horizontal">
         <Button
-            android:id="@+id/btn_p4"
+            android:id="@+id/btn_pr4"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Producto 4 #"
-        android:background="#000080"/>
+            android:background="#000080"/>
         <Button
-            android:id="@+id/btn_p5"
+            android:id="@+id/btn_pr5"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Producto 5 #"
             android:background="#0000FF"/>
         <Button
-            android:id="@+id/btn_p6"
+            android:id="@+id/btn_pr6"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -76,21 +90,21 @@
         android:layout_weight="1"
         android:orientation="horizontal">
         <Button
-            android:id="@+id/btn_p7"
+            android:id="@+id/btn_pr7"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Producto 7 #"
             android:background="#00FFFF"/>
         <Button
-            android:id="@+id/btn_p8"
+            android:id="@+id/btn_pr8"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Producto 8 #"
             android:background="#808000"/>
         <Button
-            android:id="@+id/btn_p9"
+            android:id="@+id/btn_pr9"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -98,41 +112,10 @@
             android:background="#00FF00"/>
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="Usuario:"/>
-        <EditText
-            android:id="@+id/et_user"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:hint="Escribe el usuario aqui: "/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="Correo Electrónico:"/>
-        <EditText
-            android:id="@+id/et_email"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:hint="Escribe el correo aqui: "/>
-
-    </LinearLayout>
     <Button
-        android:id="@+id/btn_send"
+        android:id="@+id/btn_share"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="ENVIAR"/>
-
+        android:text="COMPARTIR"/>
 </LinearLayout>
